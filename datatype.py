@@ -1,162 +1,97 @@
-# # #integer
+# #single 
+# name='Revati'
+# print(name)
 
-# # age=22
-# # print(age)
-# # print(type(age)) 
+# #double
+# city="pune"
+# print(city)
 
-# # # Float
-# # price = 99.99
-
-# # print(price)
-# # print(type(price))
-
-# # # String
-# # name = "Revati"
-
-# # print(name)
-# # print(type(name))
-
-# # # Boolean
-# # is_student = True
-
-# # print(is_student)
-# # print(type(is_student))
-
-# # # List
-# # fruits = ["Apple", "Banana", "Mango"]
-
-# # print(fruits)
-# # print(type(fruits))
-
-# # # Tuple
-# # numbers = (10, 20, 30)
-
-# # print(numbers)
-# # print(type(numbers))
-
-# # # Set
-# # colors = {"Red", "Green", "Blue"}
-
-# # print(colors)
-# # print(type(colors))# Set
-# # colors = {"Red", "Green", "Blue"}
-
-# # print(colors)
+# #triple
+# message='''hii good morning
+# how are you?'''
+# print(message)
 
 #1
-# n=int (input("enter a number:"))
-
-# for i in range(1, n+1):
-#     print(i)
-
-# #2
-
-# n=int (input("Enter a number:"))
-
-# for i in range(2, n+1, 2):
-# print(i)
-
-# #3
-# n=int (input("Enter a number:"))
-
-# for i in range(n):
-# if i % 2!=0:
-# print(i)
-
-# #4
-# n=int (input("Ente
-
-# #8
-# for i in range(3):
-#     for j in range(3):
-#         print(chr(65 + j), end=" ")
-#     print()
-
-# #9
-# for i in range(1, n+1):
-#  for j in range(3):
-#   print(chr(65 + j)end="")
-#   print(n)
-
-# #10
-# n=int (input("Enter a number:")
-#        i=1
-#        while i <= n:
-#        print(i)
-#        i += 1
-
-# #11
-# n=int (input("Enter a number:")
-#        i = 2
-#        while i <= n:
-#        print(i)
-#        i += 2
-       
-# #12
-# n=int (input("Enter a number:"))
-#       i = 1
-#       while i<=n:
-#       print(i)
-#       i += 2
-
-# #13
-# n=int (input()
-
-
-#1
-# n = int(input("Enter number: "))
-# i = 1
-
-# while i <= 10:
-#     print(n, "x", i, "=", n * i)
-#     i += 1
+# string=input("Enter a string:")
+# count=0
+# for i in string:
+#     count+=1
+#     print("length of string is:",count)
 
 #2
-# n = int(input("Enter number: "))
-# temp = n
-# rev = 0
+# string = input("Enter a string: ")
 
-# while temp > 0:
-#     digit = temp % 10
-#     rev = rev * 10 + digit
-#     temp //= 10
+# vowels = consonants = digits = spaces = special = 0
 
-# if rev == n:
-#     print("Palindrome")
-# else:
-#     print("Not Palindrome")
+# for ch in string:
+#     if ch.lower() in "aeiou":
+#         vowels += 1
+#     elif ch.isalpha():
+#         consonants += 1
+#     elif ch.isdigit():
+#         digits += 1
+#     elif ch == " ":
+#         spaces += 1
+#     else:
+#         special += 1
+
+# print("Vowels:", vowels)
+# print("Consonants:", consonants)
+# print("Digits:", digits)
+# print("Spaces:", spaces)
+# print("Special Characters:", special)
+
 
 #3
-# n = int(input("Enter number: "))
-
-# i = 2
-# flag = True
-
-# while i < n:
-#     if n % i == 0:
-#         flag = False
-#         break
-#     i += 1
-
-# if n > 1 and flag:
-#     print("Prime Number")
-# else:
-#     print("Not Prime Number")
+# string = input("Enter a string: ")
+# reverse = ""
+# for ch in string:
+#     reverse = ch + reverse
+# print("Reverse =", reverse)
 
 #4
-# n = int(input("Enter number: "))
-# sum = 0
+# string= input("Enter a string:")
 
-# while n > 0:
-#     digit = n % 10
-#     sum += digit
-#     n //= 10
-
-# print("Sum of digits =", sum)
+# if string == string[::-1]:
+#     print("palindrome")
+# else:
+#     print("not palindrome")
 
 #5
-n=int (input("Enter a number:"))
-fact=1
+# string= input("Enter a string:")
+# upper=lower=0
 
+# for ch in string:
+#     if ch.isupper():
+#         upper+=1
+#     elif ch.islower():
+#         lower+=1
+# print("upper:",upper)
+# print("lower:",lower)
 
+#6
+# string= input("Enter a string:")
+# old= input("character to replace:")
+# new= input("new character:")
 
+# print(string.replace(old,new))
+
+#7
+# s = input("Enter a string: ")
+
+# print("Result =", s.replace(" ", ""))
+
+#8
+# string = input("Enter a string:")
+# ch = input("Enter a character:")
+# print("Result =", string.count(ch))/
+
+#9
+# string = input("Enter a string:")
+# print("first character=",string[0])
+# print("last character=",string[-1])
+
+#10
+string = input("enter a string:")
+for ch in string:
+    print(ch, "=", ord(ch))
